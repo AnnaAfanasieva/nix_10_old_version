@@ -1,0 +1,2 @@
+javac -sourcepath ./hw_1_base_operations_anna_afanasieva/src -d target /home/ania/IdeaProjects/hw_anna_afanasieva/hw_1_base_operations_anna_afanasieva/src/tasks/Task1.java
+java -classpath ./target tasks.Task1
