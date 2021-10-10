@@ -1,10 +1,14 @@
+package tasks;
+
+import java.util.Scanner;
+
 public class Task1 {
 
-    private static int sumOfDigits(String string){
+    private static int sumOfDigits(String string) {
         char[] charSet = string.toCharArray();
         int counter = 0;
-        for(int i=0; i<charSet.length; i++){
-            if(Character.isDigit(charSet[i])){
+        for (int i = 0; i < charSet.length; i++) {
+            if (Character.isDigit(charSet[i])) {
                 counter += Character.getNumericValue(charSet[i]);
             }
         }
@@ -12,9 +16,12 @@ public class Task1 {
     }
 
     public static void main(String[] args) {
-        String string = "fd15636i01";
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите строку: ");
+        String string = in.next();
+
         int sumOfDigits = sumOfDigits(string);
-        System.out.println(sumOfDigits);
+        System.out.println("Сумма цифр в строке = " + sumOfDigits);
 
     }
 }
