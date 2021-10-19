@@ -8,6 +8,8 @@ public class SomeClass {
         Person person2 = person;
         person2.setAge(34);
         System.out.println(person.toString());
+        Person person3 = new Person("Peter", 12);
+        System.out.println(person3.toString());
 
     }
 }
