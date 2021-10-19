@@ -19,7 +19,11 @@ public class Person {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if(age<0 || age>100) {
+            System.out.println("Wrong age");
+        } else {
+            this.age = age;
+        }
     }
 
     @Override
