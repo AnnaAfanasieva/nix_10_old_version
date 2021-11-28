@@ -13,11 +13,15 @@ ____
 
 The citiesInput.txt file contains a list of cities in the format:
 >n [number of cities]
+>
 >NAME [city name]
+>
 >p [number of city neighbors NAME]
->nr cost [nr - neighbor index NAME (starting at 1)]
->           [cost - path cost]
+>
+>nr cost [nr - neighbor index NAME (starting at 1)] [cost - path cost]
+>           
 >r [number of paths to find]
+>
 >NAME1 NAME2 [NAME1 - the beginning of the way, NAME2 - the ending of the way]
 
 Each path between cities has a cost (positive integer). It is necessary to find the most profitable route between the two cities.
